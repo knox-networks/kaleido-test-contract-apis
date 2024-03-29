@@ -65,7 +65,7 @@ No authorization required
 
 ## get_contract_get
 
-> crate::models::GetContractOutputs get_contract_get(address, _contract_id, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
+> models::GetContractOutputs get_contract_get(address, _contract_id, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
 getContract(bytes32) [read only]
 
 ### Parameters
@@ -84,7 +84,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GetContractOutputs**](getContract_outputs.md)
+[**models::GetContractOutputs**](getContract_outputs.md)
 
 ### Authorization
 
@@ -100,7 +100,7 @@ No authorization required
 
 ## get_contract_post
 
-> crate::models::GetContractOutputs get_contract_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
+> models::GetContractOutputs get_contract_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
 getContract(bytes32) [read only]
 
 ### Parameters
@@ -125,7 +125,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GetContractOutputs**](getContract_outputs.md)
+[**models::GetContractOutputs**](getContract_outputs.md)
 
 ### Authorization
 
@@ -141,7 +141,7 @@ No authorization required
 
 ## h_tlcerc20_new_subscribe
 
-> crate::models::Htlcerc20NewEvent h_tlcerc20_new_subscribe(body)
+> models::Htlcerc20NewEvent h_tlcerc20_new_subscribe(body)
 HTLCERC20New(bytes32,address,address,address,uint256,bytes32,uint256) [event]
 
 ### Parameters
@@ -153,7 +153,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::Htlcerc20NewEvent**](HTLCERC20New_event.md)
+[**models::Htlcerc20NewEvent**](HTLCERC20New_event.md)
 
 ### Authorization
 
@@ -169,7 +169,7 @@ No authorization required
 
 ## h_tlcerc20_new_subscribe_all
 
-> crate::models::Htlcerc20NewEvent h_tlcerc20_new_subscribe_all(address, body)
+> models::Htlcerc20NewEvent h_tlcerc20_new_subscribe_all(address, body)
 HTLCERC20New(bytes32,address,address,address,uint256,bytes32,uint256) [event]
 
 ### Parameters
@@ -182,7 +182,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::Htlcerc20NewEvent**](HTLCERC20New_event.md)
+[**models::Htlcerc20NewEvent**](HTLCERC20New_event.md)
 
 ### Authorization
 
@@ -198,7 +198,7 @@ No authorization required
 
 ## h_tlcerc20_refund_subscribe
 
-> crate::models::Htlcerc20RefundEvent h_tlcerc20_refund_subscribe(body)
+> models::Htlcerc20RefundEvent h_tlcerc20_refund_subscribe(body)
 HTLCERC20Refund(bytes32) [event]
 
 ### Parameters
@@ -210,7 +210,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::Htlcerc20RefundEvent**](HTLCERC20Refund_event.md)
+[**models::Htlcerc20RefundEvent**](HTLCERC20Refund_event.md)
 
 ### Authorization
 
@@ -226,7 +226,7 @@ No authorization required
 
 ## h_tlcerc20_refund_subscribe_all
 
-> crate::models::Htlcerc20RefundEvent h_tlcerc20_refund_subscribe_all(address, body)
+> models::Htlcerc20RefundEvent h_tlcerc20_refund_subscribe_all(address, body)
 HTLCERC20Refund(bytes32) [event]
 
 ### Parameters
@@ -239,7 +239,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::Htlcerc20RefundEvent**](HTLCERC20Refund_event.md)
+[**models::Htlcerc20RefundEvent**](HTLCERC20Refund_event.md)
 
 ### Authorization
 
@@ -255,7 +255,7 @@ No authorization required
 
 ## h_tlcerc20_withdraw_subscribe
 
-> crate::models::Htlcerc20WithdrawEvent h_tlcerc20_withdraw_subscribe(body)
+> models::Htlcerc20WithdrawEvent h_tlcerc20_withdraw_subscribe(body)
 HTLCERC20Withdraw(bytes32) [event]
 
 ### Parameters
@@ -267,7 +267,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::Htlcerc20WithdrawEvent**](HTLCERC20Withdraw_event.md)
+[**models::Htlcerc20WithdrawEvent**](HTLCERC20Withdraw_event.md)
 
 ### Authorization
 
@@ -283,7 +283,7 @@ No authorization required
 
 ## h_tlcerc20_withdraw_subscribe_all
 
-> crate::models::Htlcerc20WithdrawEvent h_tlcerc20_withdraw_subscribe_all(address, body)
+> models::Htlcerc20WithdrawEvent h_tlcerc20_withdraw_subscribe_all(address, body)
 HTLCERC20Withdraw(bytes32) [event]
 
 ### Parameters
@@ -296,7 +296,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::Htlcerc20WithdrawEvent**](HTLCERC20Withdraw_event.md)
+[**models::Htlcerc20WithdrawEvent**](HTLCERC20Withdraw_event.md)
 
 ### Authorization
 
@@ -312,7 +312,7 @@ No authorization required
 
 ## new_contract_get
 
-> crate::models::NewContractOutputs new_contract_get(address, _receiver, _hashlock, _timelock, _token_contract, _amount, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
+> models::NewContractOutputs new_contract_get(address, _receiver, _hashlock, _timelock, _token_contract, _amount, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
 newContract(address,bytes32,uint256,address,uint256)
 
 ### Parameters
@@ -335,7 +335,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::NewContractOutputs**](newContract_outputs.md)
+[**models::NewContractOutputs**](newContract_outputs.md)
 
 ### Authorization
 
@@ -351,7 +351,7 @@ No authorization required
 
 ## new_contract_post
 
-> crate::models::NewContractOutputs new_contract_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
+> models::NewContractOutputs new_contract_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
 newContract(address,bytes32,uint256,address,uint256)
 
 ### Parameters
@@ -376,7 +376,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::NewContractOutputs**](newContract_outputs.md)
+[**models::NewContractOutputs**](newContract_outputs.md)
 
 ### Authorization
 
@@ -392,7 +392,7 @@ No authorization required
 
 ## refund_get
 
-> crate::models::RefundOutputs refund_get(address, _contract_id, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
+> models::RefundOutputs refund_get(address, _contract_id, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
 refund(bytes32)
 
 ### Parameters
@@ -411,7 +411,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::RefundOutputs**](refund_outputs.md)
+[**models::RefundOutputs**](refund_outputs.md)
 
 ### Authorization
 
@@ -427,7 +427,7 @@ No authorization required
 
 ## refund_post
 
-> crate::models::RefundOutputs refund_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
+> models::RefundOutputs refund_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
 refund(bytes32)
 
 ### Parameters
@@ -452,7 +452,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::RefundOutputs**](refund_outputs.md)
+[**models::RefundOutputs**](refund_outputs.md)
 
 ### Authorization
 
@@ -468,7 +468,7 @@ No authorization required
 
 ## withdraw_get
 
-> crate::models::WithdrawOutputs withdraw_get(address, _contract_id, _preimage, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
+> models::WithdrawOutputs withdraw_get(address, _contract_id, _preimage, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
 withdraw(bytes32,bytes32)
 
 ### Parameters
@@ -488,7 +488,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::WithdrawOutputs**](withdraw_outputs.md)
+[**models::WithdrawOutputs**](withdraw_outputs.md)
 
 ### Authorization
 
@@ -504,7 +504,7 @@ No authorization required
 
 ## withdraw_post
 
-> crate::models::WithdrawOutputs withdraw_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
+> models::WithdrawOutputs withdraw_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
 withdraw(bytes32,bytes32)
 
 ### Parameters
@@ -529,7 +529,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::WithdrawOutputs**](withdraw_outputs.md)
+[**models::WithdrawOutputs**](withdraw_outputs.md)
 
 ### Authorization
 

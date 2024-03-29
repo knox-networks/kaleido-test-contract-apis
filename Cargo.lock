@@ -359,6 +359,8 @@ version = "0.1.0"
 dependencies = [
  "knox_htlc_api",
  "knox_token_api",
+ "wb_uae_cbproxy_api",
+ "wb_xaed_token_api",
 ]
 
 [[package]]
@@ -1019,6 +1021,32 @@ name = "wasm-bindgen-shared"
 version = "0.2.91"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4f186bd2dcf04330886ce82d6f33dd75a7bfcf69ecf5763b89fcde53b6ac9838"
+
+[[package]]
+name = "wb_uae_cbproxy_api"
+version = "0.1.0"
+dependencies = [
+ "base64",
+ "reqwest",
+ "serde",
+ "serde_derive",
+ "serde_json",
+ "url",
+ "uuid",
+]
+
+[[package]]
+name = "wb_xaed_token_api"
+version = "0.1.0"
+dependencies = [
+ "base64",
+ "reqwest",
+ "serde",
+ "serde_derive",
+ "serde_json",
+ "url",
+ "uuid",
+]
 
 [[package]]
 name = "web-sys"

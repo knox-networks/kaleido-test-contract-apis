@@ -64,7 +64,7 @@ Method | HTTP request | Description
 
 ## allowance_get
 
-> crate::models::AllowanceOutputs allowance_get(address, owner, spender, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
+> models::AllowanceOutputs allowance_get(address, owner, spender, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
 allowance(address,address) [read only]
 
 See {IERC20-allowance}.
@@ -86,7 +86,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::AllowanceOutputs**](allowance_outputs.md)
+[**models::AllowanceOutputs**](allowance_outputs.md)
 
 ### Authorization
 
@@ -102,7 +102,7 @@ No authorization required
 
 ## allowance_post
 
-> crate::models::AllowanceOutputs allowance_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
+> models::AllowanceOutputs allowance_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
 allowance(address,address) [read only]
 
 See {IERC20-allowance}.
@@ -129,7 +129,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::AllowanceOutputs**](allowance_outputs.md)
+[**models::AllowanceOutputs**](allowance_outputs.md)
 
 ### Authorization
 
@@ -145,7 +145,7 @@ No authorization required
 
 ## approval_subscribe
 
-> crate::models::ApprovalEvent approval_subscribe(body)
+> models::ApprovalEvent approval_subscribe(body)
 Approval(address,address,uint256) [event]
 
 ### Parameters
@@ -157,7 +157,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ApprovalEvent**](Approval_event.md)
+[**models::ApprovalEvent**](Approval_event.md)
 
 ### Authorization
 
@@ -173,7 +173,7 @@ No authorization required
 
 ## approval_subscribe_all
 
-> crate::models::ApprovalEvent approval_subscribe_all(address, body)
+> models::ApprovalEvent approval_subscribe_all(address, body)
 Approval(address,address,uint256) [event]
 
 ### Parameters
@@ -186,7 +186,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ApprovalEvent**](Approval_event.md)
+[**models::ApprovalEvent**](Approval_event.md)
 
 ### Authorization
 
@@ -202,7 +202,7 @@ No authorization required
 
 ## approve_get
 
-> crate::models::ApproveOutputs approve_get(address, spender, amount, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
+> models::ApproveOutputs approve_get(address, spender, amount, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
 approve(address,uint256)
 
 See {IERC20-approve}. Requirements: - `spender` cannot be the zero address.
@@ -224,7 +224,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ApproveOutputs**](approve_outputs.md)
+[**models::ApproveOutputs**](approve_outputs.md)
 
 ### Authorization
 
@@ -240,7 +240,7 @@ No authorization required
 
 ## approve_post
 
-> crate::models::ApproveOutputs approve_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
+> models::ApproveOutputs approve_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
 approve(address,uint256)
 
 See {IERC20-approve}. Requirements: - `spender` cannot be the zero address.
@@ -267,7 +267,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ApproveOutputs**](approve_outputs.md)
+[**models::ApproveOutputs**](approve_outputs.md)
 
 ### Authorization
 
@@ -283,7 +283,7 @@ No authorization required
 
 ## balance_of_get
 
-> crate::models::BalanceOfOutputs balance_of_get(address, account, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
+> models::BalanceOfOutputs balance_of_get(address, account, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
 balanceOf(address) [read only]
 
 See {IERC20-balanceOf}.
@@ -304,7 +304,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::BalanceOfOutputs**](balanceOf_outputs.md)
+[**models::BalanceOfOutputs**](balanceOf_outputs.md)
 
 ### Authorization
 
@@ -320,7 +320,7 @@ No authorization required
 
 ## balance_of_post
 
-> crate::models::BalanceOfOutputs balance_of_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
+> models::BalanceOfOutputs balance_of_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
 balanceOf(address) [read only]
 
 See {IERC20-balanceOf}.
@@ -347,7 +347,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::BalanceOfOutputs**](balanceOf_outputs.md)
+[**models::BalanceOfOutputs**](balanceOf_outputs.md)
 
 ### Authorization
 
@@ -565,7 +565,7 @@ No authorization required
 
 ## d_efaultadminrole_get
 
-> crate::models::DefaultAdminRoleOutputs d_efaultadminrole_get(address, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
+> models::DefaultAdminRoleOutputs d_efaultadminrole_get(address, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
 DEFAULT_ADMIN_ROLE() [read only]
 
 ### Parameters
@@ -583,7 +583,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::DefaultAdminRoleOutputs**](DEFAULT_ADMIN_ROLE_outputs.md)
+[**models::DefaultAdminRoleOutputs**](DEFAULT_ADMIN_ROLE_outputs.md)
 
 ### Authorization
 
@@ -599,7 +599,7 @@ No authorization required
 
 ## d_efaultadminrole_post
 
-> crate::models::DefaultAdminRoleOutputs d_efaultadminrole_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
+> models::DefaultAdminRoleOutputs d_efaultadminrole_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
 DEFAULT_ADMIN_ROLE() [read only]
 
 ### Parameters
@@ -624,7 +624,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::DefaultAdminRoleOutputs**](DEFAULT_ADMIN_ROLE_outputs.md)
+[**models::DefaultAdminRoleOutputs**](DEFAULT_ADMIN_ROLE_outputs.md)
 
 ### Authorization
 
@@ -640,7 +640,7 @@ No authorization required
 
 ## decimals_get
 
-> crate::models::DecimalsOutputs decimals_get(address, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
+> models::DecimalsOutputs decimals_get(address, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
 decimals() [read only]
 
 Returns the number of decimals used to get its user representation. For example, if `decimals` equals `2`, a balance of `505` tokens should be displayed to a user as `5,05` (`505 / 10 ** 2`). Tokens usually opt for a value of 18, imitating the relationship between Ether and Wei. This is the value {ERC20} uses, unless {_setupDecimals} is called. NOTE: This information is only used for _display_ purposes: it in no way affects any of the arithmetic of the contract, including {IERC20-balanceOf} and {IERC20-transfer}.
@@ -660,7 +660,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::DecimalsOutputs**](decimals_outputs.md)
+[**models::DecimalsOutputs**](decimals_outputs.md)
 
 ### Authorization
 
@@ -676,7 +676,7 @@ No authorization required
 
 ## decimals_post
 
-> crate::models::DecimalsOutputs decimals_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
+> models::DecimalsOutputs decimals_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
 decimals() [read only]
 
 Returns the number of decimals used to get its user representation. For example, if `decimals` equals `2`, a balance of `505` tokens should be displayed to a user as `5,05` (`505 / 10 ** 2`). Tokens usually opt for a value of 18, imitating the relationship between Ether and Wei. This is the value {ERC20} uses, unless {_setupDecimals} is called. NOTE: This information is only used for _display_ purposes: it in no way affects any of the arithmetic of the contract, including {IERC20-balanceOf} and {IERC20-transfer}.
@@ -703,7 +703,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::DecimalsOutputs**](decimals_outputs.md)
+[**models::DecimalsOutputs**](decimals_outputs.md)
 
 ### Authorization
 
@@ -719,7 +719,7 @@ No authorization required
 
 ## decrease_allowance_get
 
-> crate::models::DecreaseAllowanceOutputs decrease_allowance_get(address, spender, subtracted_value, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
+> models::DecreaseAllowanceOutputs decrease_allowance_get(address, spender, subtracted_value, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
 decreaseAllowance(address,uint256)
 
 Atomically decreases the allowance granted to `spender` by the caller. This is an alternative to {approve} that can be used as a mitigation for problems described in {IERC20-approve}. Emits an {Approval} event indicating the updated allowance. Requirements: - `spender` cannot be the zero address. - `spender` must have allowance for the caller of at least `subtractedValue`.
@@ -741,7 +741,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::DecreaseAllowanceOutputs**](decreaseAllowance_outputs.md)
+[**models::DecreaseAllowanceOutputs**](decreaseAllowance_outputs.md)
 
 ### Authorization
 
@@ -757,7 +757,7 @@ No authorization required
 
 ## decrease_allowance_post
 
-> crate::models::DecreaseAllowanceOutputs decrease_allowance_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
+> models::DecreaseAllowanceOutputs decrease_allowance_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
 decreaseAllowance(address,uint256)
 
 Atomically decreases the allowance granted to `spender` by the caller. This is an alternative to {approve} that can be used as a mitigation for problems described in {IERC20-approve}. Emits an {Approval} event indicating the updated allowance. Requirements: - `spender` cannot be the zero address. - `spender` must have allowance for the caller of at least `subtractedValue`.
@@ -784,7 +784,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::DecreaseAllowanceOutputs**](decreaseAllowance_outputs.md)
+[**models::DecreaseAllowanceOutputs**](decreaseAllowance_outputs.md)
 
 ### Authorization
 
@@ -800,7 +800,7 @@ No authorization required
 
 ## get_role_admin_get
 
-> crate::models::GetRoleAdminOutputs get_role_admin_get(address, role, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
+> models::GetRoleAdminOutputs get_role_admin_get(address, role, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
 getRoleAdmin(bytes32) [read only]
 
 Returns the admin role that controls `role`. See {grantRole} and {revokeRole}. To change a role's admin, use {_setRoleAdmin}.
@@ -821,7 +821,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GetRoleAdminOutputs**](getRoleAdmin_outputs.md)
+[**models::GetRoleAdminOutputs**](getRoleAdmin_outputs.md)
 
 ### Authorization
 
@@ -837,7 +837,7 @@ No authorization required
 
 ## get_role_admin_post
 
-> crate::models::GetRoleAdminOutputs get_role_admin_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
+> models::GetRoleAdminOutputs get_role_admin_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
 getRoleAdmin(bytes32) [read only]
 
 Returns the admin role that controls `role`. See {grantRole} and {revokeRole}. To change a role's admin, use {_setRoleAdmin}.
@@ -864,7 +864,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GetRoleAdminOutputs**](getRoleAdmin_outputs.md)
+[**models::GetRoleAdminOutputs**](getRoleAdmin_outputs.md)
 
 ### Authorization
 
@@ -880,7 +880,7 @@ No authorization required
 
 ## get_role_member_count_get
 
-> crate::models::GetRoleMemberCountOutputs get_role_member_count_get(address, role, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
+> models::GetRoleMemberCountOutputs get_role_member_count_get(address, role, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
 getRoleMemberCount(bytes32) [read only]
 
 Returns the number of accounts that have `role`. Can be used together with {getRoleMember} to enumerate all bearers of a role.
@@ -901,7 +901,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GetRoleMemberCountOutputs**](getRoleMemberCount_outputs.md)
+[**models::GetRoleMemberCountOutputs**](getRoleMemberCount_outputs.md)
 
 ### Authorization
 
@@ -917,7 +917,7 @@ No authorization required
 
 ## get_role_member_count_post
 
-> crate::models::GetRoleMemberCountOutputs get_role_member_count_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
+> models::GetRoleMemberCountOutputs get_role_member_count_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
 getRoleMemberCount(bytes32) [read only]
 
 Returns the number of accounts that have `role`. Can be used together with {getRoleMember} to enumerate all bearers of a role.
@@ -944,7 +944,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GetRoleMemberCountOutputs**](getRoleMemberCount_outputs.md)
+[**models::GetRoleMemberCountOutputs**](getRoleMemberCount_outputs.md)
 
 ### Authorization
 
@@ -960,7 +960,7 @@ No authorization required
 
 ## get_role_member_get
 
-> crate::models::GetRoleMemberOutputs get_role_member_get(address, role, index, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
+> models::GetRoleMemberOutputs get_role_member_get(address, role, index, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
 getRoleMember(bytes32,uint256) [read only]
 
 Returns one of the accounts that have `role`. `index` must be a value between 0 and {getRoleMemberCount}, non-inclusive. Role bearers are not sorted in any particular way, and their ordering may change at any point. WARNING: When using {getRoleMember} and {getRoleMemberCount}, make sure you perform all queries on the same block. See the following https://forum.openzeppelin.com/t/iterating-over-elements-on-enumerableset-in-openzeppelin-contracts/2296[forum post] for more information.
@@ -982,7 +982,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GetRoleMemberOutputs**](getRoleMember_outputs.md)
+[**models::GetRoleMemberOutputs**](getRoleMember_outputs.md)
 
 ### Authorization
 
@@ -998,7 +998,7 @@ No authorization required
 
 ## get_role_member_post
 
-> crate::models::GetRoleMemberOutputs get_role_member_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
+> models::GetRoleMemberOutputs get_role_member_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
 getRoleMember(bytes32,uint256) [read only]
 
 Returns one of the accounts that have `role`. `index` must be a value between 0 and {getRoleMemberCount}, non-inclusive. Role bearers are not sorted in any particular way, and their ordering may change at any point. WARNING: When using {getRoleMember} and {getRoleMemberCount}, make sure you perform all queries on the same block. See the following https://forum.openzeppelin.com/t/iterating-over-elements-on-enumerableset-in-openzeppelin-contracts/2296[forum post] for more information.
@@ -1025,7 +1025,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GetRoleMemberOutputs**](getRoleMember_outputs.md)
+[**models::GetRoleMemberOutputs**](getRoleMember_outputs.md)
 
 ### Authorization
 
@@ -1122,7 +1122,7 @@ No authorization required
 
 ## has_role_get
 
-> crate::models::HasRoleOutputs has_role_get(address, role, account, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
+> models::HasRoleOutputs has_role_get(address, role, account, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
 hasRole(bytes32,address) [read only]
 
 Returns `true` if `account` has been granted `role`.
@@ -1144,7 +1144,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::HasRoleOutputs**](hasRole_outputs.md)
+[**models::HasRoleOutputs**](hasRole_outputs.md)
 
 ### Authorization
 
@@ -1160,7 +1160,7 @@ No authorization required
 
 ## has_role_post
 
-> crate::models::HasRoleOutputs has_role_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
+> models::HasRoleOutputs has_role_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
 hasRole(bytes32,address) [read only]
 
 Returns `true` if `account` has been granted `role`.
@@ -1187,7 +1187,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::HasRoleOutputs**](hasRole_outputs.md)
+[**models::HasRoleOutputs**](hasRole_outputs.md)
 
 ### Authorization
 
@@ -1203,7 +1203,7 @@ No authorization required
 
 ## increase_allowance_get
 
-> crate::models::IncreaseAllowanceOutputs increase_allowance_get(address, spender, added_value, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
+> models::IncreaseAllowanceOutputs increase_allowance_get(address, spender, added_value, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
 increaseAllowance(address,uint256)
 
 Atomically increases the allowance granted to `spender` by the caller. This is an alternative to {approve} that can be used as a mitigation for problems described in {IERC20-approve}. Emits an {Approval} event indicating the updated allowance. Requirements: - `spender` cannot be the zero address.
@@ -1225,7 +1225,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::IncreaseAllowanceOutputs**](increaseAllowance_outputs.md)
+[**models::IncreaseAllowanceOutputs**](increaseAllowance_outputs.md)
 
 ### Authorization
 
@@ -1241,7 +1241,7 @@ No authorization required
 
 ## increase_allowance_post
 
-> crate::models::IncreaseAllowanceOutputs increase_allowance_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
+> models::IncreaseAllowanceOutputs increase_allowance_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
 increaseAllowance(address,uint256)
 
 Atomically increases the allowance granted to `spender` by the caller. This is an alternative to {approve} that can be used as a mitigation for problems described in {IERC20-approve}. Emits an {Approval} event indicating the updated allowance. Requirements: - `spender` cannot be the zero address.
@@ -1268,7 +1268,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::IncreaseAllowanceOutputs**](increaseAllowance_outputs.md)
+[**models::IncreaseAllowanceOutputs**](increaseAllowance_outputs.md)
 
 ### Authorization
 
@@ -1284,7 +1284,7 @@ No authorization required
 
 ## m_interrole_get
 
-> crate::models::MinterRoleOutputs m_interrole_get(address, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
+> models::MinterRoleOutputs m_interrole_get(address, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
 MINTER_ROLE() [read only]
 
 ### Parameters
@@ -1302,7 +1302,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::MinterRoleOutputs**](MINTER_ROLE_outputs.md)
+[**models::MinterRoleOutputs**](MINTER_ROLE_outputs.md)
 
 ### Authorization
 
@@ -1318,7 +1318,7 @@ No authorization required
 
 ## m_interrole_post
 
-> crate::models::MinterRoleOutputs m_interrole_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
+> models::MinterRoleOutputs m_interrole_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
 MINTER_ROLE() [read only]
 
 ### Parameters
@@ -1343,7 +1343,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::MinterRoleOutputs**](MINTER_ROLE_outputs.md)
+[**models::MinterRoleOutputs**](MINTER_ROLE_outputs.md)
 
 ### Authorization
 
@@ -1436,7 +1436,7 @@ No authorization required
 
 ## name_get
 
-> crate::models::NameOutputs name_get(address, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
+> models::NameOutputs name_get(address, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
 name() [read only]
 
 Returns the name of the token.
@@ -1456,7 +1456,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::NameOutputs**](name_outputs.md)
+[**models::NameOutputs**](name_outputs.md)
 
 ### Authorization
 
@@ -1472,7 +1472,7 @@ No authorization required
 
 ## name_post
 
-> crate::models::NameOutputs name_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
+> models::NameOutputs name_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
 name() [read only]
 
 Returns the name of the token.
@@ -1499,7 +1499,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::NameOutputs**](name_outputs.md)
+[**models::NameOutputs**](name_outputs.md)
 
 ### Authorization
 
@@ -1677,7 +1677,7 @@ No authorization required
 
 ## role_granted_subscribe
 
-> crate::models::RoleGrantedEvent role_granted_subscribe(body)
+> models::RoleGrantedEvent role_granted_subscribe(body)
 RoleGranted(bytes32,address,address) [event]
 
 ### Parameters
@@ -1689,7 +1689,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::RoleGrantedEvent**](RoleGranted_event.md)
+[**models::RoleGrantedEvent**](RoleGranted_event.md)
 
 ### Authorization
 
@@ -1705,7 +1705,7 @@ No authorization required
 
 ## role_granted_subscribe_all
 
-> crate::models::RoleGrantedEvent role_granted_subscribe_all(address, body)
+> models::RoleGrantedEvent role_granted_subscribe_all(address, body)
 RoleGranted(bytes32,address,address) [event]
 
 ### Parameters
@@ -1718,7 +1718,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::RoleGrantedEvent**](RoleGranted_event.md)
+[**models::RoleGrantedEvent**](RoleGranted_event.md)
 
 ### Authorization
 
@@ -1734,7 +1734,7 @@ No authorization required
 
 ## role_revoked_subscribe
 
-> crate::models::RoleRevokedEvent role_revoked_subscribe(body)
+> models::RoleRevokedEvent role_revoked_subscribe(body)
 RoleRevoked(bytes32,address,address) [event]
 
 ### Parameters
@@ -1746,7 +1746,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::RoleRevokedEvent**](RoleRevoked_event.md)
+[**models::RoleRevokedEvent**](RoleRevoked_event.md)
 
 ### Authorization
 
@@ -1762,7 +1762,7 @@ No authorization required
 
 ## role_revoked_subscribe_all
 
-> crate::models::RoleRevokedEvent role_revoked_subscribe_all(address, body)
+> models::RoleRevokedEvent role_revoked_subscribe_all(address, body)
 RoleRevoked(bytes32,address,address) [event]
 
 ### Parameters
@@ -1775,7 +1775,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::RoleRevokedEvent**](RoleRevoked_event.md)
+[**models::RoleRevokedEvent**](RoleRevoked_event.md)
 
 ### Authorization
 
@@ -1791,7 +1791,7 @@ No authorization required
 
 ## symbol_get
 
-> crate::models::SymbolOutputs symbol_get(address, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
+> models::SymbolOutputs symbol_get(address, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
 symbol() [read only]
 
 Returns the symbol of the token, usually a shorter version of the name.
@@ -1811,7 +1811,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::SymbolOutputs**](symbol_outputs.md)
+[**models::SymbolOutputs**](symbol_outputs.md)
 
 ### Authorization
 
@@ -1827,7 +1827,7 @@ No authorization required
 
 ## symbol_post
 
-> crate::models::SymbolOutputs symbol_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
+> models::SymbolOutputs symbol_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
 symbol() [read only]
 
 Returns the symbol of the token, usually a shorter version of the name.
@@ -1854,7 +1854,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::SymbolOutputs**](symbol_outputs.md)
+[**models::SymbolOutputs**](symbol_outputs.md)
 
 ### Authorization
 
@@ -1870,7 +1870,7 @@ No authorization required
 
 ## total_supply_get
 
-> crate::models::TotalSupplyOutputs total_supply_get(address, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
+> models::TotalSupplyOutputs total_supply_get(address, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
 totalSupply() [read only]
 
 See {IERC20-totalSupply}.
@@ -1890,7 +1890,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::TotalSupplyOutputs**](totalSupply_outputs.md)
+[**models::TotalSupplyOutputs**](totalSupply_outputs.md)
 
 ### Authorization
 
@@ -1906,7 +1906,7 @@ No authorization required
 
 ## total_supply_post
 
-> crate::models::TotalSupplyOutputs total_supply_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
+> models::TotalSupplyOutputs total_supply_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
 totalSupply() [read only]
 
 See {IERC20-totalSupply}.
@@ -1933,7 +1933,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::TotalSupplyOutputs**](totalSupply_outputs.md)
+[**models::TotalSupplyOutputs**](totalSupply_outputs.md)
 
 ### Authorization
 
@@ -1949,7 +1949,7 @@ No authorization required
 
 ## transfer_from_get
 
-> crate::models::TransferFromOutputs transfer_from_get(address, sender, recipient, amount, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
+> models::TransferFromOutputs transfer_from_get(address, sender, recipient, amount, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
 transferFrom(address,address,uint256)
 
 See {IERC20-transferFrom}. Emits an {Approval} event indicating the updated allowance. This is not required by the EIP. See the note at the beginning of {ERC20}; Requirements: - `sender` and `recipient` cannot be the zero address. - `sender` must have a balance of at least `amount`. - the caller must have allowance for ``sender``'s tokens of at least `amount`.
@@ -1972,7 +1972,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::TransferFromOutputs**](transferFrom_outputs.md)
+[**models::TransferFromOutputs**](transferFrom_outputs.md)
 
 ### Authorization
 
@@ -1988,7 +1988,7 @@ No authorization required
 
 ## transfer_from_post
 
-> crate::models::TransferFromOutputs transfer_from_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
+> models::TransferFromOutputs transfer_from_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
 transferFrom(address,address,uint256)
 
 See {IERC20-transferFrom}. Emits an {Approval} event indicating the updated allowance. This is not required by the EIP. See the note at the beginning of {ERC20}; Requirements: - `sender` and `recipient` cannot be the zero address. - `sender` must have a balance of at least `amount`. - the caller must have allowance for ``sender``'s tokens of at least `amount`.
@@ -2015,7 +2015,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::TransferFromOutputs**](transferFrom_outputs.md)
+[**models::TransferFromOutputs**](transferFrom_outputs.md)
 
 ### Authorization
 
@@ -2031,7 +2031,7 @@ No authorization required
 
 ## transfer_get
 
-> crate::models::TransferOutputs transfer_get(address, recipient, amount, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
+> models::TransferOutputs transfer_get(address, recipient, amount, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
 transfer(address,uint256)
 
 See {IERC20-transfer}. Requirements: - `recipient` cannot be the zero address. - the caller must have a balance of at least `amount`.
@@ -2053,7 +2053,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::TransferOutputs**](transfer_outputs.md)
+[**models::TransferOutputs**](transfer_outputs.md)
 
 ### Authorization
 
@@ -2069,7 +2069,7 @@ No authorization required
 
 ## transfer_post
 
-> crate::models::TransferOutputs transfer_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
+> models::TransferOutputs transfer_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype, kld_privacygroupid)
 transfer(address,uint256)
 
 See {IERC20-transfer}. Requirements: - `recipient` cannot be the zero address. - the caller must have a balance of at least `amount`.
@@ -2096,7 +2096,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::TransferOutputs**](transfer_outputs.md)
+[**models::TransferOutputs**](transfer_outputs.md)
 
 ### Authorization
 
@@ -2112,7 +2112,7 @@ No authorization required
 
 ## transfer_subscribe
 
-> crate::models::TransferEvent transfer_subscribe(body)
+> models::TransferEvent transfer_subscribe(body)
 Transfer(address,address,uint256) [event]
 
 ### Parameters
@@ -2124,7 +2124,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::TransferEvent**](Transfer_event.md)
+[**models::TransferEvent**](Transfer_event.md)
 
 ### Authorization
 
@@ -2140,7 +2140,7 @@ No authorization required
 
 ## transfer_subscribe_all
 
-> crate::models::TransferEvent transfer_subscribe_all(address, body)
+> models::TransferEvent transfer_subscribe_all(address, body)
 Transfer(address,address,uint256) [event]
 
 ### Parameters
@@ -2153,7 +2153,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::TransferEvent**](Transfer_event.md)
+[**models::TransferEvent**](Transfer_event.md)
 
 ### Authorization
 

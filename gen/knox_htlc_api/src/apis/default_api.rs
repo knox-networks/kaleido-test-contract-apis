@@ -11,13 +11,13 @@
 use reqwest;
 
 use super::{configuration, Error};
-use crate::apis::ResponseContent;
+use crate::{apis::ResponseContent, models};
 
 /// struct for typed errors of method [`constructor_post`]
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum ConstructorPostError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -25,7 +25,7 @@ pub enum ConstructorPostError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum GetContractGetError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -33,7 +33,7 @@ pub enum GetContractGetError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum GetContractPostError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -41,7 +41,7 @@ pub enum GetContractPostError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum HTlcerc20NewSubscribeError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -49,7 +49,7 @@ pub enum HTlcerc20NewSubscribeError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum HTlcerc20NewSubscribeAllError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -57,7 +57,7 @@ pub enum HTlcerc20NewSubscribeAllError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum HTlcerc20RefundSubscribeError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -65,7 +65,7 @@ pub enum HTlcerc20RefundSubscribeError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum HTlcerc20RefundSubscribeAllError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -73,7 +73,7 @@ pub enum HTlcerc20RefundSubscribeAllError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum HTlcerc20WithdrawSubscribeError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -81,7 +81,7 @@ pub enum HTlcerc20WithdrawSubscribeError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum HTlcerc20WithdrawSubscribeAllError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -89,7 +89,7 @@ pub enum HTlcerc20WithdrawSubscribeAllError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum NewContractGetError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -97,7 +97,7 @@ pub enum NewContractGetError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum NewContractPostError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -105,7 +105,7 @@ pub enum NewContractPostError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum RefundGetError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -113,7 +113,7 @@ pub enum RefundGetError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum RefundPostError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -121,7 +121,7 @@ pub enum RefundPostError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum WithdrawGetError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -129,7 +129,7 @@ pub enum WithdrawGetError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum WithdrawPostError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -254,7 +254,7 @@ pub async fn get_contract_get(
     kld_gas: Option<i32>,
     kld_gasprice: Option<i32>,
     kld_transaction: Option<&str>,
-) -> Result<crate::models::GetContractOutputs, Error<GetContractGetError>> {
+) -> Result<models::GetContractOutputs, Error<GetContractGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -329,7 +329,7 @@ pub async fn get_contract_get(
 pub async fn get_contract_post(
     configuration: &configuration::Configuration,
     address: &str,
-    body: crate::models::GetContractInputs,
+    body: models::GetContractInputs,
     kld_id: Option<&str>,
     kld_from: Option<&str>,
     kld_ethvalue: Option<i32>,
@@ -342,7 +342,7 @@ pub async fn get_contract_post(
     kld_blocknumber: Option<&str>,
     kld_acktype: Option<&str>,
     kld_privacygroupid: Option<&str>,
-) -> Result<crate::models::GetContractOutputs, Error<GetContractPostError>> {
+) -> Result<models::GetContractOutputs, Error<GetContractPostError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -439,8 +439,8 @@ pub async fn get_contract_post(
 
 pub async fn h_tlcerc20_new_subscribe(
     configuration: &configuration::Configuration,
-    body: crate::models::Htlcerc20NewSubscribeRequest,
-) -> Result<crate::models::Htlcerc20NewEvent, Error<HTlcerc20NewSubscribeError>> {
+    body: models::Htlcerc20NewSubscribeRequest,
+) -> Result<models::Htlcerc20NewEvent, Error<HTlcerc20NewSubscribeError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -489,8 +489,8 @@ pub async fn h_tlcerc20_new_subscribe(
 pub async fn h_tlcerc20_new_subscribe_all(
     configuration: &configuration::Configuration,
     address: &str,
-    body: crate::models::Htlcerc20NewSubscribeRequest,
-) -> Result<crate::models::Htlcerc20NewEvent, Error<HTlcerc20NewSubscribeAllError>> {
+    body: models::Htlcerc20NewSubscribeRequest,
+) -> Result<models::Htlcerc20NewEvent, Error<HTlcerc20NewSubscribeAllError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -539,8 +539,8 @@ pub async fn h_tlcerc20_new_subscribe_all(
 
 pub async fn h_tlcerc20_refund_subscribe(
     configuration: &configuration::Configuration,
-    body: crate::models::Htlcerc20NewSubscribeRequest,
-) -> Result<crate::models::Htlcerc20RefundEvent, Error<HTlcerc20RefundSubscribeError>> {
+    body: models::Htlcerc20NewSubscribeRequest,
+) -> Result<models::Htlcerc20RefundEvent, Error<HTlcerc20RefundSubscribeError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -589,8 +589,8 @@ pub async fn h_tlcerc20_refund_subscribe(
 pub async fn h_tlcerc20_refund_subscribe_all(
     configuration: &configuration::Configuration,
     address: &str,
-    body: crate::models::Htlcerc20NewSubscribeRequest,
-) -> Result<crate::models::Htlcerc20RefundEvent, Error<HTlcerc20RefundSubscribeAllError>> {
+    body: models::Htlcerc20NewSubscribeRequest,
+) -> Result<models::Htlcerc20RefundEvent, Error<HTlcerc20RefundSubscribeAllError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -639,8 +639,8 @@ pub async fn h_tlcerc20_refund_subscribe_all(
 
 pub async fn h_tlcerc20_withdraw_subscribe(
     configuration: &configuration::Configuration,
-    body: crate::models::Htlcerc20NewSubscribeRequest,
-) -> Result<crate::models::Htlcerc20WithdrawEvent, Error<HTlcerc20WithdrawSubscribeError>> {
+    body: models::Htlcerc20NewSubscribeRequest,
+) -> Result<models::Htlcerc20WithdrawEvent, Error<HTlcerc20WithdrawSubscribeError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -689,8 +689,8 @@ pub async fn h_tlcerc20_withdraw_subscribe(
 pub async fn h_tlcerc20_withdraw_subscribe_all(
     configuration: &configuration::Configuration,
     address: &str,
-    body: crate::models::Htlcerc20NewSubscribeRequest,
-) -> Result<crate::models::Htlcerc20WithdrawEvent, Error<HTlcerc20WithdrawSubscribeAllError>> {
+    body: models::Htlcerc20NewSubscribeRequest,
+) -> Result<models::Htlcerc20WithdrawEvent, Error<HTlcerc20WithdrawSubscribeAllError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -751,7 +751,7 @@ pub async fn new_contract_get(
     kld_gas: Option<i32>,
     kld_gasprice: Option<i32>,
     kld_transaction: Option<&str>,
-) -> Result<crate::models::NewContractOutputs, Error<NewContractGetError>> {
+) -> Result<models::NewContractOutputs, Error<NewContractGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -830,7 +830,7 @@ pub async fn new_contract_get(
 pub async fn new_contract_post(
     configuration: &configuration::Configuration,
     address: &str,
-    body: crate::models::NewContractInputs,
+    body: models::NewContractInputs,
     kld_id: Option<&str>,
     kld_from: Option<&str>,
     kld_ethvalue: Option<i32>,
@@ -843,7 +843,7 @@ pub async fn new_contract_post(
     kld_blocknumber: Option<&str>,
     kld_acktype: Option<&str>,
     kld_privacygroupid: Option<&str>,
-) -> Result<crate::models::NewContractOutputs, Error<NewContractPostError>> {
+) -> Result<models::NewContractOutputs, Error<NewContractPostError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -948,7 +948,7 @@ pub async fn refund_get(
     kld_gas: Option<i32>,
     kld_gasprice: Option<i32>,
     kld_transaction: Option<&str>,
-) -> Result<crate::models::RefundOutputs, Error<RefundGetError>> {
+) -> Result<models::RefundOutputs, Error<RefundGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -1023,7 +1023,7 @@ pub async fn refund_get(
 pub async fn refund_post(
     configuration: &configuration::Configuration,
     address: &str,
-    body: crate::models::RefundInputs,
+    body: models::RefundInputs,
     kld_id: Option<&str>,
     kld_from: Option<&str>,
     kld_ethvalue: Option<i32>,
@@ -1036,7 +1036,7 @@ pub async fn refund_post(
     kld_blocknumber: Option<&str>,
     kld_acktype: Option<&str>,
     kld_privacygroupid: Option<&str>,
-) -> Result<crate::models::RefundOutputs, Error<RefundPostError>> {
+) -> Result<models::RefundOutputs, Error<RefundPostError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -1142,7 +1142,7 @@ pub async fn withdraw_get(
     kld_gas: Option<i32>,
     kld_gasprice: Option<i32>,
     kld_transaction: Option<&str>,
-) -> Result<crate::models::WithdrawOutputs, Error<WithdrawGetError>> {
+) -> Result<models::WithdrawOutputs, Error<WithdrawGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -1218,7 +1218,7 @@ pub async fn withdraw_get(
 pub async fn withdraw_post(
     configuration: &configuration::Configuration,
     address: &str,
-    body: crate::models::WithdrawInputs,
+    body: models::WithdrawInputs,
     kld_id: Option<&str>,
     kld_from: Option<&str>,
     kld_ethvalue: Option<i32>,
@@ -1231,7 +1231,7 @@ pub async fn withdraw_post(
     kld_blocknumber: Option<&str>,
     kld_acktype: Option<&str>,
     kld_privacygroupid: Option<&str>,
-) -> Result<crate::models::WithdrawOutputs, Error<WithdrawPostError>> {
+) -> Result<models::WithdrawOutputs, Error<WithdrawPostError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

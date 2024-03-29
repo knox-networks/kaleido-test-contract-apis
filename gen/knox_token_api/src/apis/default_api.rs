@@ -11,13 +11,13 @@
 use reqwest;
 
 use super::{configuration, Error};
-use crate::apis::ResponseContent;
+use crate::{apis::ResponseContent, models};
 
 /// struct for typed errors of method [`allowance_get`]
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum AllowanceGetError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -25,7 +25,7 @@ pub enum AllowanceGetError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum AllowancePostError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -33,7 +33,7 @@ pub enum AllowancePostError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum ApprovalSubscribeError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -41,7 +41,7 @@ pub enum ApprovalSubscribeError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum ApprovalSubscribeAllError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -49,7 +49,7 @@ pub enum ApprovalSubscribeAllError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum ApproveGetError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -57,7 +57,7 @@ pub enum ApproveGetError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum ApprovePostError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -65,7 +65,7 @@ pub enum ApprovePostError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum BalanceOfGetError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -73,7 +73,7 @@ pub enum BalanceOfGetError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum BalanceOfPostError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -81,7 +81,7 @@ pub enum BalanceOfPostError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum BurnFromGetError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -89,7 +89,7 @@ pub enum BurnFromGetError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum BurnFromPostError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -97,7 +97,7 @@ pub enum BurnFromPostError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum BurnGetError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -105,7 +105,7 @@ pub enum BurnGetError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum BurnPostError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -113,7 +113,7 @@ pub enum BurnPostError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum ConstructorPostError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -121,7 +121,7 @@ pub enum ConstructorPostError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum DEfaultadminroleGetError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -129,7 +129,7 @@ pub enum DEfaultadminroleGetError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum DEfaultadminrolePostError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -137,7 +137,7 @@ pub enum DEfaultadminrolePostError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum DecimalsGetError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -145,7 +145,7 @@ pub enum DecimalsGetError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum DecimalsPostError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -153,7 +153,7 @@ pub enum DecimalsPostError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum DecreaseAllowanceGetError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -161,7 +161,7 @@ pub enum DecreaseAllowanceGetError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum DecreaseAllowancePostError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -169,7 +169,7 @@ pub enum DecreaseAllowancePostError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum GetRoleAdminGetError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -177,7 +177,7 @@ pub enum GetRoleAdminGetError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum GetRoleAdminPostError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -185,7 +185,7 @@ pub enum GetRoleAdminPostError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum GetRoleMemberCountGetError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -193,7 +193,7 @@ pub enum GetRoleMemberCountGetError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum GetRoleMemberCountPostError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -201,7 +201,7 @@ pub enum GetRoleMemberCountPostError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum GetRoleMemberGetError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -209,7 +209,7 @@ pub enum GetRoleMemberGetError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum GetRoleMemberPostError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -217,7 +217,7 @@ pub enum GetRoleMemberPostError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum GrantRoleGetError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -225,7 +225,7 @@ pub enum GrantRoleGetError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum GrantRolePostError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -233,7 +233,7 @@ pub enum GrantRolePostError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum HasRoleGetError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -241,7 +241,7 @@ pub enum HasRoleGetError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum HasRolePostError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -249,7 +249,7 @@ pub enum HasRolePostError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum IncreaseAllowanceGetError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -257,7 +257,7 @@ pub enum IncreaseAllowanceGetError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum IncreaseAllowancePostError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -265,7 +265,7 @@ pub enum IncreaseAllowancePostError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum MInterroleGetError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -273,7 +273,7 @@ pub enum MInterroleGetError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum MInterrolePostError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -281,7 +281,7 @@ pub enum MInterrolePostError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum MintGetError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -289,7 +289,7 @@ pub enum MintGetError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum MintPostError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -297,7 +297,7 @@ pub enum MintPostError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum NameGetError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -305,7 +305,7 @@ pub enum NameGetError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum NamePostError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -313,7 +313,7 @@ pub enum NamePostError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum RenounceRoleGetError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -321,7 +321,7 @@ pub enum RenounceRoleGetError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum RenounceRolePostError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -329,7 +329,7 @@ pub enum RenounceRolePostError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum RevokeRoleGetError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -337,7 +337,7 @@ pub enum RevokeRoleGetError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum RevokeRolePostError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -345,7 +345,7 @@ pub enum RevokeRolePostError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum RoleGrantedSubscribeError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -353,7 +353,7 @@ pub enum RoleGrantedSubscribeError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum RoleGrantedSubscribeAllError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -361,7 +361,7 @@ pub enum RoleGrantedSubscribeAllError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum RoleRevokedSubscribeError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -369,7 +369,7 @@ pub enum RoleRevokedSubscribeError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum RoleRevokedSubscribeAllError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -377,7 +377,7 @@ pub enum RoleRevokedSubscribeAllError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum SymbolGetError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -385,7 +385,7 @@ pub enum SymbolGetError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum SymbolPostError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -393,7 +393,7 @@ pub enum SymbolPostError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum TotalSupplyGetError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -401,7 +401,7 @@ pub enum TotalSupplyGetError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum TotalSupplyPostError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -409,7 +409,7 @@ pub enum TotalSupplyPostError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum TransferFromGetError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -417,7 +417,7 @@ pub enum TransferFromGetError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum TransferFromPostError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -425,7 +425,7 @@ pub enum TransferFromPostError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum TransferGetError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -433,7 +433,7 @@ pub enum TransferGetError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum TransferPostError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -441,7 +441,7 @@ pub enum TransferPostError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum TransferSubscribeError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -449,7 +449,7 @@ pub enum TransferSubscribeError {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum TransferSubscribeAllError {
-    DefaultResponse(crate::models::Error),
+    DefaultResponse(models::Error),
     UnknownValue(serde_json::Value),
 }
 
@@ -465,7 +465,7 @@ pub async fn allowance_get(
     kld_gas: Option<i32>,
     kld_gasprice: Option<i32>,
     kld_transaction: Option<&str>,
-) -> Result<crate::models::AllowanceOutputs, Error<AllowanceGetError>> {
+) -> Result<models::AllowanceOutputs, Error<AllowanceGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -541,7 +541,7 @@ pub async fn allowance_get(
 pub async fn allowance_post(
     configuration: &configuration::Configuration,
     address: &str,
-    body: crate::models::AllowanceInputs,
+    body: models::AllowanceInputs,
     kld_id: Option<&str>,
     kld_from: Option<&str>,
     kld_ethvalue: Option<i32>,
@@ -554,7 +554,7 @@ pub async fn allowance_post(
     kld_blocknumber: Option<&str>,
     kld_acktype: Option<&str>,
     kld_privacygroupid: Option<&str>,
-) -> Result<crate::models::AllowanceOutputs, Error<AllowancePostError>> {
+) -> Result<models::AllowanceOutputs, Error<AllowancePostError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -651,8 +651,8 @@ pub async fn allowance_post(
 
 pub async fn approval_subscribe(
     configuration: &configuration::Configuration,
-    body: crate::models::ApprovalSubscribeRequest,
-) -> Result<crate::models::ApprovalEvent, Error<ApprovalSubscribeError>> {
+    body: models::ApprovalSubscribeRequest,
+) -> Result<models::ApprovalEvent, Error<ApprovalSubscribeError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -698,8 +698,8 @@ pub async fn approval_subscribe(
 pub async fn approval_subscribe_all(
     configuration: &configuration::Configuration,
     address: &str,
-    body: crate::models::ApprovalSubscribeRequest,
-) -> Result<crate::models::ApprovalEvent, Error<ApprovalSubscribeAllError>> {
+    body: models::ApprovalSubscribeRequest,
+) -> Result<models::ApprovalEvent, Error<ApprovalSubscribeAllError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -758,7 +758,7 @@ pub async fn approve_get(
     kld_gas: Option<i32>,
     kld_gasprice: Option<i32>,
     kld_transaction: Option<&str>,
-) -> Result<crate::models::ApproveOutputs, Error<ApproveGetError>> {
+) -> Result<models::ApproveOutputs, Error<ApproveGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -834,7 +834,7 @@ pub async fn approve_get(
 pub async fn approve_post(
     configuration: &configuration::Configuration,
     address: &str,
-    body: crate::models::ApproveInputs,
+    body: models::ApproveInputs,
     kld_id: Option<&str>,
     kld_from: Option<&str>,
     kld_ethvalue: Option<i32>,
@@ -847,7 +847,7 @@ pub async fn approve_post(
     kld_blocknumber: Option<&str>,
     kld_acktype: Option<&str>,
     kld_privacygroupid: Option<&str>,
-) -> Result<crate::models::ApproveOutputs, Error<ApprovePostError>> {
+) -> Result<models::ApproveOutputs, Error<ApprovePostError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -953,7 +953,7 @@ pub async fn balance_of_get(
     kld_gas: Option<i32>,
     kld_gasprice: Option<i32>,
     kld_transaction: Option<&str>,
-) -> Result<crate::models::BalanceOfOutputs, Error<BalanceOfGetError>> {
+) -> Result<models::BalanceOfOutputs, Error<BalanceOfGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -1028,7 +1028,7 @@ pub async fn balance_of_get(
 pub async fn balance_of_post(
     configuration: &configuration::Configuration,
     address: &str,
-    body: crate::models::BalanceOfInputs,
+    body: models::BalanceOfInputs,
     kld_id: Option<&str>,
     kld_from: Option<&str>,
     kld_ethvalue: Option<i32>,
@@ -1041,7 +1041,7 @@ pub async fn balance_of_post(
     kld_blocknumber: Option<&str>,
     kld_acktype: Option<&str>,
     kld_privacygroupid: Option<&str>,
-) -> Result<crate::models::BalanceOfOutputs, Error<BalanceOfPostError>> {
+) -> Result<models::BalanceOfOutputs, Error<BalanceOfPostError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -1224,7 +1224,7 @@ pub async fn burn_from_get(
 pub async fn burn_from_post(
     configuration: &configuration::Configuration,
     address: &str,
-    body: crate::models::BurnFromInputs,
+    body: models::BurnFromInputs,
     kld_id: Option<&str>,
     kld_from: Option<&str>,
     kld_ethvalue: Option<i32>,
@@ -1417,7 +1417,7 @@ pub async fn burn_get(
 pub async fn burn_post(
     configuration: &configuration::Configuration,
     address: &str,
-    body: crate::models::BurnInputs,
+    body: models::BurnInputs,
     kld_id: Option<&str>,
     kld_from: Option<&str>,
     kld_ethvalue: Option<i32>,
@@ -1526,7 +1526,7 @@ pub async fn burn_post(
 
 pub async fn constructor_post(
     configuration: &configuration::Configuration,
-    body: crate::models::ConstructorInputs,
+    body: models::ConstructorInputs,
     kld_id: Option<&str>,
     kld_from: Option<&str>,
     kld_ethvalue: Option<i32>,
@@ -1644,7 +1644,7 @@ pub async fn d_efaultadminrole_get(
     kld_gas: Option<i32>,
     kld_gasprice: Option<i32>,
     kld_transaction: Option<&str>,
-) -> Result<crate::models::DefaultAdminRoleOutputs, Error<DEfaultadminroleGetError>> {
+) -> Result<models::DefaultAdminRoleOutputs, Error<DEfaultadminroleGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -1730,7 +1730,7 @@ pub async fn d_efaultadminrole_post(
     kld_blocknumber: Option<&str>,
     kld_acktype: Option<&str>,
     kld_privacygroupid: Option<&str>,
-) -> Result<crate::models::DefaultAdminRoleOutputs, Error<DEfaultadminrolePostError>> {
+) -> Result<models::DefaultAdminRoleOutputs, Error<DEfaultadminrolePostError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -1835,7 +1835,7 @@ pub async fn decimals_get(
     kld_gas: Option<i32>,
     kld_gasprice: Option<i32>,
     kld_transaction: Option<&str>,
-) -> Result<crate::models::DecimalsOutputs, Error<DecimalsGetError>> {
+) -> Result<models::DecimalsOutputs, Error<DecimalsGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -1922,7 +1922,7 @@ pub async fn decimals_post(
     kld_blocknumber: Option<&str>,
     kld_acktype: Option<&str>,
     kld_privacygroupid: Option<&str>,
-) -> Result<crate::models::DecimalsOutputs, Error<DecimalsPostError>> {
+) -> Result<models::DecimalsOutputs, Error<DecimalsPostError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -2029,7 +2029,7 @@ pub async fn decrease_allowance_get(
     kld_gas: Option<i32>,
     kld_gasprice: Option<i32>,
     kld_transaction: Option<&str>,
-) -> Result<crate::models::DecreaseAllowanceOutputs, Error<DecreaseAllowanceGetError>> {
+) -> Result<models::DecreaseAllowanceOutputs, Error<DecreaseAllowanceGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -2106,7 +2106,7 @@ pub async fn decrease_allowance_get(
 pub async fn decrease_allowance_post(
     configuration: &configuration::Configuration,
     address: &str,
-    body: crate::models::DecreaseAllowanceInputs,
+    body: models::DecreaseAllowanceInputs,
     kld_id: Option<&str>,
     kld_from: Option<&str>,
     kld_ethvalue: Option<i32>,
@@ -2119,7 +2119,7 @@ pub async fn decrease_allowance_post(
     kld_blocknumber: Option<&str>,
     kld_acktype: Option<&str>,
     kld_privacygroupid: Option<&str>,
-) -> Result<crate::models::DecreaseAllowanceOutputs, Error<DecreaseAllowancePostError>> {
+) -> Result<models::DecreaseAllowanceOutputs, Error<DecreaseAllowancePostError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -2225,7 +2225,7 @@ pub async fn get_role_admin_get(
     kld_gas: Option<i32>,
     kld_gasprice: Option<i32>,
     kld_transaction: Option<&str>,
-) -> Result<crate::models::GetRoleAdminOutputs, Error<GetRoleAdminGetError>> {
+) -> Result<models::GetRoleAdminOutputs, Error<GetRoleAdminGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -2300,7 +2300,7 @@ pub async fn get_role_admin_get(
 pub async fn get_role_admin_post(
     configuration: &configuration::Configuration,
     address: &str,
-    body: crate::models::GetRoleAdminInputs,
+    body: models::GetRoleAdminInputs,
     kld_id: Option<&str>,
     kld_from: Option<&str>,
     kld_ethvalue: Option<i32>,
@@ -2313,7 +2313,7 @@ pub async fn get_role_admin_post(
     kld_blocknumber: Option<&str>,
     kld_acktype: Option<&str>,
     kld_privacygroupid: Option<&str>,
-) -> Result<crate::models::GetRoleAdminOutputs, Error<GetRoleAdminPostError>> {
+) -> Result<models::GetRoleAdminOutputs, Error<GetRoleAdminPostError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -2419,7 +2419,7 @@ pub async fn get_role_member_count_get(
     kld_gas: Option<i32>,
     kld_gasprice: Option<i32>,
     kld_transaction: Option<&str>,
-) -> Result<crate::models::GetRoleMemberCountOutputs, Error<GetRoleMemberCountGetError>> {
+) -> Result<models::GetRoleMemberCountOutputs, Error<GetRoleMemberCountGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -2494,7 +2494,7 @@ pub async fn get_role_member_count_get(
 pub async fn get_role_member_count_post(
     configuration: &configuration::Configuration,
     address: &str,
-    body: crate::models::GetRoleMemberCountInputs,
+    body: models::GetRoleMemberCountInputs,
     kld_id: Option<&str>,
     kld_from: Option<&str>,
     kld_ethvalue: Option<i32>,
@@ -2507,7 +2507,7 @@ pub async fn get_role_member_count_post(
     kld_blocknumber: Option<&str>,
     kld_acktype: Option<&str>,
     kld_privacygroupid: Option<&str>,
-) -> Result<crate::models::GetRoleMemberCountOutputs, Error<GetRoleMemberCountPostError>> {
+) -> Result<models::GetRoleMemberCountOutputs, Error<GetRoleMemberCountPostError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -2614,7 +2614,7 @@ pub async fn get_role_member_get(
     kld_gas: Option<i32>,
     kld_gasprice: Option<i32>,
     kld_transaction: Option<&str>,
-) -> Result<crate::models::GetRoleMemberOutputs, Error<GetRoleMemberGetError>> {
+) -> Result<models::GetRoleMemberOutputs, Error<GetRoleMemberGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -2690,7 +2690,7 @@ pub async fn get_role_member_get(
 pub async fn get_role_member_post(
     configuration: &configuration::Configuration,
     address: &str,
-    body: crate::models::GetRoleMemberInputs,
+    body: models::GetRoleMemberInputs,
     kld_id: Option<&str>,
     kld_from: Option<&str>,
     kld_ethvalue: Option<i32>,
@@ -2703,7 +2703,7 @@ pub async fn get_role_member_post(
     kld_blocknumber: Option<&str>,
     kld_acktype: Option<&str>,
     kld_privacygroupid: Option<&str>,
-) -> Result<crate::models::GetRoleMemberOutputs, Error<GetRoleMemberPostError>> {
+) -> Result<models::GetRoleMemberOutputs, Error<GetRoleMemberPostError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -2886,7 +2886,7 @@ pub async fn grant_role_get(
 pub async fn grant_role_post(
     configuration: &configuration::Configuration,
     address: &str,
-    body: crate::models::GrantRoleInputs,
+    body: models::GrantRoleInputs,
     kld_id: Option<&str>,
     kld_from: Option<&str>,
     kld_ethvalue: Option<i32>,
@@ -3006,7 +3006,7 @@ pub async fn has_role_get(
     kld_gas: Option<i32>,
     kld_gasprice: Option<i32>,
     kld_transaction: Option<&str>,
-) -> Result<crate::models::HasRoleOutputs, Error<HasRoleGetError>> {
+) -> Result<models::HasRoleOutputs, Error<HasRoleGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -3082,7 +3082,7 @@ pub async fn has_role_get(
 pub async fn has_role_post(
     configuration: &configuration::Configuration,
     address: &str,
-    body: crate::models::HasRoleInputs,
+    body: models::HasRoleInputs,
     kld_id: Option<&str>,
     kld_from: Option<&str>,
     kld_ethvalue: Option<i32>,
@@ -3095,7 +3095,7 @@ pub async fn has_role_post(
     kld_blocknumber: Option<&str>,
     kld_acktype: Option<&str>,
     kld_privacygroupid: Option<&str>,
-) -> Result<crate::models::HasRoleOutputs, Error<HasRolePostError>> {
+) -> Result<models::HasRoleOutputs, Error<HasRolePostError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -3202,7 +3202,7 @@ pub async fn increase_allowance_get(
     kld_gas: Option<i32>,
     kld_gasprice: Option<i32>,
     kld_transaction: Option<&str>,
-) -> Result<crate::models::IncreaseAllowanceOutputs, Error<IncreaseAllowanceGetError>> {
+) -> Result<models::IncreaseAllowanceOutputs, Error<IncreaseAllowanceGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -3279,7 +3279,7 @@ pub async fn increase_allowance_get(
 pub async fn increase_allowance_post(
     configuration: &configuration::Configuration,
     address: &str,
-    body: crate::models::IncreaseAllowanceInputs,
+    body: models::IncreaseAllowanceInputs,
     kld_id: Option<&str>,
     kld_from: Option<&str>,
     kld_ethvalue: Option<i32>,
@@ -3292,7 +3292,7 @@ pub async fn increase_allowance_post(
     kld_blocknumber: Option<&str>,
     kld_acktype: Option<&str>,
     kld_privacygroupid: Option<&str>,
-) -> Result<crate::models::IncreaseAllowanceOutputs, Error<IncreaseAllowancePostError>> {
+) -> Result<models::IncreaseAllowanceOutputs, Error<IncreaseAllowancePostError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -3396,7 +3396,7 @@ pub async fn m_interrole_get(
     kld_gas: Option<i32>,
     kld_gasprice: Option<i32>,
     kld_transaction: Option<&str>,
-) -> Result<crate::models::MinterRoleOutputs, Error<MInterroleGetError>> {
+) -> Result<models::MinterRoleOutputs, Error<MInterroleGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -3482,7 +3482,7 @@ pub async fn m_interrole_post(
     kld_blocknumber: Option<&str>,
     kld_acktype: Option<&str>,
     kld_privacygroupid: Option<&str>,
-) -> Result<crate::models::MinterRoleOutputs, Error<MInterrolePostError>> {
+) -> Result<models::MinterRoleOutputs, Error<MInterrolePostError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -3662,7 +3662,7 @@ pub async fn mint_get(
 pub async fn mint_post(
     configuration: &configuration::Configuration,
     address: &str,
-    body: crate::models::MintInputs,
+    body: models::MintInputs,
     kld_id: Option<&str>,
     kld_from: Option<&str>,
     kld_ethvalue: Option<i32>,
@@ -3779,7 +3779,7 @@ pub async fn name_get(
     kld_gas: Option<i32>,
     kld_gasprice: Option<i32>,
     kld_transaction: Option<&str>,
-) -> Result<crate::models::NameOutputs, Error<NameGetError>> {
+) -> Result<models::NameOutputs, Error<NameGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -3865,7 +3865,7 @@ pub async fn name_post(
     kld_blocknumber: Option<&str>,
     kld_acktype: Option<&str>,
     kld_privacygroupid: Option<&str>,
-) -> Result<crate::models::NameOutputs, Error<NamePostError>> {
+) -> Result<models::NameOutputs, Error<NamePostError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -4047,7 +4047,7 @@ pub async fn renounce_role_get(
 pub async fn renounce_role_post(
     configuration: &configuration::Configuration,
     address: &str,
-    body: crate::models::RenounceRoleInputs,
+    body: models::RenounceRoleInputs,
     kld_id: Option<&str>,
     kld_from: Option<&str>,
     kld_ethvalue: Option<i32>,
@@ -4243,7 +4243,7 @@ pub async fn revoke_role_get(
 pub async fn revoke_role_post(
     configuration: &configuration::Configuration,
     address: &str,
-    body: crate::models::RevokeRoleInputs,
+    body: models::RevokeRoleInputs,
     kld_id: Option<&str>,
     kld_from: Option<&str>,
     kld_ethvalue: Option<i32>,
@@ -4353,8 +4353,8 @@ pub async fn revoke_role_post(
 
 pub async fn role_granted_subscribe(
     configuration: &configuration::Configuration,
-    body: crate::models::ApprovalSubscribeRequest,
-) -> Result<crate::models::RoleGrantedEvent, Error<RoleGrantedSubscribeError>> {
+    body: models::ApprovalSubscribeRequest,
+) -> Result<models::RoleGrantedEvent, Error<RoleGrantedSubscribeError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -4403,8 +4403,8 @@ pub async fn role_granted_subscribe(
 pub async fn role_granted_subscribe_all(
     configuration: &configuration::Configuration,
     address: &str,
-    body: crate::models::ApprovalSubscribeRequest,
-) -> Result<crate::models::RoleGrantedEvent, Error<RoleGrantedSubscribeAllError>> {
+    body: models::ApprovalSubscribeRequest,
+) -> Result<models::RoleGrantedEvent, Error<RoleGrantedSubscribeAllError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -4453,8 +4453,8 @@ pub async fn role_granted_subscribe_all(
 
 pub async fn role_revoked_subscribe(
     configuration: &configuration::Configuration,
-    body: crate::models::ApprovalSubscribeRequest,
-) -> Result<crate::models::RoleRevokedEvent, Error<RoleRevokedSubscribeError>> {
+    body: models::ApprovalSubscribeRequest,
+) -> Result<models::RoleRevokedEvent, Error<RoleRevokedSubscribeError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -4503,8 +4503,8 @@ pub async fn role_revoked_subscribe(
 pub async fn role_revoked_subscribe_all(
     configuration: &configuration::Configuration,
     address: &str,
-    body: crate::models::ApprovalSubscribeRequest,
-) -> Result<crate::models::RoleRevokedEvent, Error<RoleRevokedSubscribeAllError>> {
+    body: models::ApprovalSubscribeRequest,
+) -> Result<models::RoleRevokedEvent, Error<RoleRevokedSubscribeAllError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -4561,7 +4561,7 @@ pub async fn symbol_get(
     kld_gas: Option<i32>,
     kld_gasprice: Option<i32>,
     kld_transaction: Option<&str>,
-) -> Result<crate::models::SymbolOutputs, Error<SymbolGetError>> {
+) -> Result<models::SymbolOutputs, Error<SymbolGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -4648,7 +4648,7 @@ pub async fn symbol_post(
     kld_blocknumber: Option<&str>,
     kld_acktype: Option<&str>,
     kld_privacygroupid: Option<&str>,
-) -> Result<crate::models::SymbolOutputs, Error<SymbolPostError>> {
+) -> Result<models::SymbolOutputs, Error<SymbolPostError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -4753,7 +4753,7 @@ pub async fn total_supply_get(
     kld_gas: Option<i32>,
     kld_gasprice: Option<i32>,
     kld_transaction: Option<&str>,
-) -> Result<crate::models::TotalSupplyOutputs, Error<TotalSupplyGetError>> {
+) -> Result<models::TotalSupplyOutputs, Error<TotalSupplyGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -4840,7 +4840,7 @@ pub async fn total_supply_post(
     kld_blocknumber: Option<&str>,
     kld_acktype: Option<&str>,
     kld_privacygroupid: Option<&str>,
-) -> Result<crate::models::TotalSupplyOutputs, Error<TotalSupplyPostError>> {
+) -> Result<models::TotalSupplyOutputs, Error<TotalSupplyPostError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -4948,7 +4948,7 @@ pub async fn transfer_from_get(
     kld_gas: Option<i32>,
     kld_gasprice: Option<i32>,
     kld_transaction: Option<&str>,
-) -> Result<crate::models::TransferFromOutputs, Error<TransferFromGetError>> {
+) -> Result<models::TransferFromOutputs, Error<TransferFromGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -5025,7 +5025,7 @@ pub async fn transfer_from_get(
 pub async fn transfer_from_post(
     configuration: &configuration::Configuration,
     address: &str,
-    body: crate::models::TransferFromInputs,
+    body: models::TransferFromInputs,
     kld_id: Option<&str>,
     kld_from: Option<&str>,
     kld_ethvalue: Option<i32>,
@@ -5038,7 +5038,7 @@ pub async fn transfer_from_post(
     kld_blocknumber: Option<&str>,
     kld_acktype: Option<&str>,
     kld_privacygroupid: Option<&str>,
-) -> Result<crate::models::TransferFromOutputs, Error<TransferFromPostError>> {
+) -> Result<models::TransferFromOutputs, Error<TransferFromPostError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -5145,7 +5145,7 @@ pub async fn transfer_get(
     kld_gas: Option<i32>,
     kld_gasprice: Option<i32>,
     kld_transaction: Option<&str>,
-) -> Result<crate::models::TransferOutputs, Error<TransferGetError>> {
+) -> Result<models::TransferOutputs, Error<TransferGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -5221,7 +5221,7 @@ pub async fn transfer_get(
 pub async fn transfer_post(
     configuration: &configuration::Configuration,
     address: &str,
-    body: crate::models::TransferInputs,
+    body: models::TransferInputs,
     kld_id: Option<&str>,
     kld_from: Option<&str>,
     kld_ethvalue: Option<i32>,
@@ -5234,7 +5234,7 @@ pub async fn transfer_post(
     kld_blocknumber: Option<&str>,
     kld_acktype: Option<&str>,
     kld_privacygroupid: Option<&str>,
-) -> Result<crate::models::TransferOutputs, Error<TransferPostError>> {
+) -> Result<models::TransferOutputs, Error<TransferPostError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -5331,8 +5331,8 @@ pub async fn transfer_post(
 
 pub async fn transfer_subscribe(
     configuration: &configuration::Configuration,
-    body: crate::models::ApprovalSubscribeRequest,
-) -> Result<crate::models::TransferEvent, Error<TransferSubscribeError>> {
+    body: models::ApprovalSubscribeRequest,
+) -> Result<models::TransferEvent, Error<TransferSubscribeError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -5378,8 +5378,8 @@ pub async fn transfer_subscribe(
 pub async fn transfer_subscribe_all(
     configuration: &configuration::Configuration,
     address: &str,
-    body: crate::models::ApprovalSubscribeRequest,
-) -> Result<crate::models::TransferEvent, Error<TransferSubscribeAllError>> {
+    body: models::ApprovalSubscribeRequest,
+) -> Result<models::TransferEvent, Error<TransferSubscribeAllError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
