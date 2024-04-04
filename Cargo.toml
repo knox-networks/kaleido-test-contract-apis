@@ -8,3 +8,4 @@ knox_token_api = { path = "./gen/knox_token_api" }
 knox_htlc_api = { path = "./gen/knox_htlc_api" }
 wb_uae_cbproxy_api = { path = "./gen/wb_uae_cbproxy_api" }
 wb_xaed_token_api = { path = "./gen/wb_xaed_token_api" }
+wb_xegp_token_api = { path = "./gen/wb_xegp_token_api" }
