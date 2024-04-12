@@ -22,52 +22,52 @@ wb_payment_init = { path = "./wb_payment_init" }
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://u0s5jrp8nx-u0jo91fxhc-connect.us0-aws.kaleido.io/gateways/u0hkte1rqe*
+All URIs are relative to *https://u0s5jrp8nx-u0jo91fxhc-connect.us0-aws.kaleido.io/gateways/u0bpii6ir3*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*DefaultApi* | [**build_screening_key_from_address_get**](docs/DefaultApi.md#build_screening_key_from_address_get) | **GET** /{address}/buildScreeningKeyFromAddress | buildScreeningKeyFromAddress(string,address) [read only]
-*DefaultApi* | [**build_screening_key_from_address_post**](docs/DefaultApi.md#build_screening_key_from_address_post) | **POST** /{address}/buildScreeningKeyFromAddress | buildScreeningKeyFromAddress(string,address) [read only]
+*DefaultApi* | [**build_payment_notification_key_from_address_get**](docs/DefaultApi.md#build_payment_notification_key_from_address_get) | **GET** /{address}/buildPaymentNotificationKeyFromAddress | buildPaymentNotificationKeyFromAddress(string,address) [read only]
+*DefaultApi* | [**build_payment_notification_key_from_address_post**](docs/DefaultApi.md#build_payment_notification_key_from_address_post) | **POST** /{address}/buildPaymentNotificationKeyFromAddress | buildPaymentNotificationKeyFromAddress(string,address) [read only]
 *DefaultApi* | [**constructor_post**](docs/DefaultApi.md#constructor_post) | **POST** / | constructor()
-*DefaultApi* | [**create_sanctions_screening_get**](docs/DefaultApi.md#create_sanctions_screening_get) | **GET** /{address}/createSanctionsScreening | createSanctionsScreening(string,string,string,bytes)
-*DefaultApi* | [**create_sanctions_screening_post**](docs/DefaultApi.md#create_sanctions_screening_post) | **POST** /{address}/createSanctionsScreening | createSanctionsScreening(string,string,string,bytes)
+*DefaultApi* | [**create_payment_notification_get**](docs/DefaultApi.md#create_payment_notification_get) | **GET** /{address}/createPaymentNotification | createPaymentNotification(string,(string,string),(address,address,uint256,uint256),bytes)
+*DefaultApi* | [**create_payment_notification_post**](docs/DefaultApi.md#create_payment_notification_post) | **POST** /{address}/createPaymentNotification | createPaymentNotification(string,(string,string),(address,address,uint256,uint256),bytes)
 *DefaultApi* | [**get_intermediary_get**](docs/DefaultApi.md#get_intermediary_get) | **GET** /{address}/getIntermediary | getIntermediary(address) [read only]
 *DefaultApi* | [**get_intermediary_post**](docs/DefaultApi.md#get_intermediary_post) | **POST** /{address}/getIntermediary | getIntermediary(address) [read only]
-*DefaultApi* | [**get_sanctions_screening_get**](docs/DefaultApi.md#get_sanctions_screening_get) | **GET** /{address}/getSanctionsScreening | getSanctionsScreening(bytes32) [read only]
-*DefaultApi* | [**get_sanctions_screening_post**](docs/DefaultApi.md#get_sanctions_screening_post) | **POST** /{address}/getSanctionsScreening | getSanctionsScreening(bytes32) [read only]
+*DefaultApi* | [**get_payment_notification_get**](docs/DefaultApi.md#get_payment_notification_get) | **GET** /{address}/getPaymentNotification | getPaymentNotification(bytes32) [read only]
+*DefaultApi* | [**get_payment_notification_post**](docs/DefaultApi.md#get_payment_notification_post) | **POST** /{address}/getPaymentNotification | getPaymentNotification(bytes32) [read only]
 *DefaultApi* | [**intermediary_registration_subscribe**](docs/DefaultApi.md#intermediary_registration_subscribe) | **POST** /IntermediaryRegistration/subscribe | IntermediaryRegistration(address,string) [event]
 *DefaultApi* | [**intermediary_registration_subscribe_all**](docs/DefaultApi.md#intermediary_registration_subscribe_all) | **POST** /{address}/IntermediaryRegistration/subscribe | IntermediaryRegistration(address,string) [event]
 *DefaultApi* | [**owner_get**](docs/DefaultApi.md#owner_get) | **GET** /{address}/owner | owner() [read only]
 *DefaultApi* | [**owner_post**](docs/DefaultApi.md#owner_post) | **POST** /{address}/owner | owner() [read only]
-*DefaultApi* | [**payeee_respond_sanctions_screening_get**](docs/DefaultApi.md#payeee_respond_sanctions_screening_get) | **GET** /{address}/payeeeRespondSanctionsScreening | payeeeRespondSanctionsScreening(bytes32,uint8,uint8,bytes)
-*DefaultApi* | [**payeee_respond_sanctions_screening_post**](docs/DefaultApi.md#payeee_respond_sanctions_screening_post) | **POST** /{address}/payeeeRespondSanctionsScreening | payeeeRespondSanctionsScreening(bytes32,uint8,uint8,bytes)
+*DefaultApi* | [**payeee_respond_sanctions_screening_get**](docs/DefaultApi.md#payeee_respond_sanctions_screening_get) | **GET** /{address}/payeeeRespondSanctionsScreening | payeeeRespondSanctionsScreening(bytes32,uint8,uint8,bytes,bytes32)
+*DefaultApi* | [**payeee_respond_sanctions_screening_post**](docs/DefaultApi.md#payeee_respond_sanctions_screening_post) | **POST** /{address}/payeeeRespondSanctionsScreening | payeeeRespondSanctionsScreening(bytes32,uint8,uint8,bytes,bytes32)
 *DefaultApi* | [**payer_respond_sanctions_screening_get**](docs/DefaultApi.md#payer_respond_sanctions_screening_get) | **GET** /{address}/payerRespondSanctionsScreening | payerRespondSanctionsScreening(bytes32,uint8,bytes)
 *DefaultApi* | [**payer_respond_sanctions_screening_post**](docs/DefaultApi.md#payer_respond_sanctions_screening_post) | **POST** /{address}/payerRespondSanctionsScreening | payerRespondSanctionsScreening(bytes32,uint8,bytes)
+*DefaultApi* | [**payment_notification_event_subscribe**](docs/DefaultApi.md#payment_notification_event_subscribe) | **POST** /PaymentNotificationEvent/subscribe | PaymentNotificationEvent((address,address,(address,address),bytes32,string,(string,string),(address,address,uint256,uint256),bytes,(uint8,uint8,uint8),uint256,bytes32)) [event]
+*DefaultApi* | [**payment_notification_event_subscribe_all**](docs/DefaultApi.md#payment_notification_event_subscribe_all) | **POST** /{address}/PaymentNotificationEvent/subscribe | PaymentNotificationEvent((address,address,(address,address),bytes32,string,(string,string),(address,address,uint256,uint256),bytes,(uint8,uint8,uint8),uint256,bytes32)) [event]
 *DefaultApi* | [**register_intermediary_get**](docs/DefaultApi.md#register_intermediary_get) | **GET** /{address}/registerIntermediary | registerIntermediary(address,string)
 *DefaultApi* | [**register_intermediary_post**](docs/DefaultApi.md#register_intermediary_post) | **POST** /{address}/registerIntermediary | registerIntermediary(address,string)
-*DefaultApi* | [**sanctions_screening_event_subscribe**](docs/DefaultApi.md#sanctions_screening_event_subscribe) | **POST** /SanctionsScreeningEvent/subscribe | SanctionsScreeningEvent((address,address,bytes32,string,string,string,bytes,(uint8,uint8,uint8),uint256)) [event]
-*DefaultApi* | [**sanctions_screening_event_subscribe_all**](docs/DefaultApi.md#sanctions_screening_event_subscribe_all) | **POST** /{address}/SanctionsScreeningEvent/subscribe | SanctionsScreeningEvent((address,address,bytes32,string,string,string,bytes,(uint8,uint8,uint8),uint256)) [event]
 *DefaultApi* | [**set_owner_get**](docs/DefaultApi.md#set_owner_get) | **GET** /{address}/setOwner | setOwner(address)
 *DefaultApi* | [**set_owner_post**](docs/DefaultApi.md#set_owner_post) | **POST** /{address}/setOwner | setOwner(address)
 
 
 ## Documentation For Models
 
- - [BuildScreeningKeyFromAddressInputs](docs/BuildScreeningKeyFromAddressInputs.md)
- - [BuildScreeningKeyFromAddressOutputs](docs/BuildScreeningKeyFromAddressOutputs.md)
- - [CreateSanctionsScreeningInputs](docs/CreateSanctionsScreeningInputs.md)
+ - [BuildPaymentNotificationKeyFromAddressInputs](docs/BuildPaymentNotificationKeyFromAddressInputs.md)
+ - [BuildPaymentNotificationKeyFromAddressOutputs](docs/BuildPaymentNotificationKeyFromAddressOutputs.md)
+ - [CreatePaymentNotificationInputs](docs/CreatePaymentNotificationInputs.md)
  - [Error](docs/Error.md)
  - [GetIntermediaryInputs](docs/GetIntermediaryInputs.md)
  - [GetIntermediaryOutputs](docs/GetIntermediaryOutputs.md)
- - [GetSanctionsScreeningInputs](docs/GetSanctionsScreeningInputs.md)
- - [GetSanctionsScreeningOutputs](docs/GetSanctionsScreeningOutputs.md)
+ - [GetPaymentNotificationInputs](docs/GetPaymentNotificationInputs.md)
+ - [GetPaymentNotificationOutputs](docs/GetPaymentNotificationOutputs.md)
  - [IntermediaryRegistrationEvent](docs/IntermediaryRegistrationEvent.md)
  - [IntermediaryRegistrationSubscribeRequest](docs/IntermediaryRegistrationSubscribeRequest.md)
  - [OwnerOutputs](docs/OwnerOutputs.md)
  - [PayeeeRespondSanctionsScreeningInputs](docs/PayeeeRespondSanctionsScreeningInputs.md)
  - [PayerRespondSanctionsScreeningInputs](docs/PayerRespondSanctionsScreeningInputs.md)
+ - [PaymentNotificationEventEvent](docs/PaymentNotificationEventEvent.md)
  - [RegisterIntermediaryInputs](docs/RegisterIntermediaryInputs.md)
- - [SanctionsScreeningEventEvent](docs/SanctionsScreeningEventEvent.md)
  - [SetOwnerInputs](docs/SetOwnerInputs.md)
 
 

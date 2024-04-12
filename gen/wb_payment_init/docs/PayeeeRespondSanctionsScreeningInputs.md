@@ -4,6 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**hashlock** | Option<**String**> | bytes32 | [optional]
 **key** | Option<**String**> | bytes32 | [optional]
 **pac_json** | Option<**String**> | bytes | [optional]
 **payee_verif_by_payee_country** | Option<**String**> | uint8 | [optional]
