@@ -10,6 +10,8 @@ pub mod get_intermediary_inputs;
 pub use self::get_intermediary_inputs::GetIntermediaryInputs;
 pub mod get_intermediary_outputs;
 pub use self::get_intermediary_outputs::GetIntermediaryOutputs;
+pub mod get_owner_outputs;
+pub use self::get_owner_outputs::GetOwnerOutputs;
 pub mod get_payment_notification_inputs;
 pub use self::get_payment_notification_inputs::GetPaymentNotificationInputs;
 pub mod get_payment_notification_outputs;

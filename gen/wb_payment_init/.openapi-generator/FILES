@@ -9,6 +9,7 @@ docs/DefaultApi.md
 docs/Error.md
 docs/GetIntermediaryInputs.md
 docs/GetIntermediaryOutputs.md
+docs/GetOwnerOutputs.md
 docs/GetPaymentNotificationInputs.md
 docs/GetPaymentNotificationOutputs.md
 docs/IntermediaryRegistrationEvent.md
@@ -29,6 +30,7 @@ src/models/create_payment_notification_inputs.rs
 src/models/error.rs
 src/models/get_intermediary_inputs.rs
 src/models/get_intermediary_outputs.rs
+src/models/get_owner_outputs.rs
 src/models/get_payment_notification_inputs.rs
 src/models/get_payment_notification_outputs.rs
 src/models/intermediary_registration_event.rs

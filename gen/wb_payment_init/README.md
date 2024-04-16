@@ -22,7 +22,7 @@ wb_payment_init = { path = "./wb_payment_init" }
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://u0s5jrp8nx-u0jo91fxhc-connect.us0-aws.kaleido.io/gateways/u0bpii6ir3*
+All URIs are relative to *https://u0s5jrp8nx-u0jo91fxhc-connect.us0-aws.kaleido.io/gateways/u0zvk4trgb*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
@@ -33,6 +33,8 @@ Class | Method | HTTP request | Description
 *DefaultApi* | [**create_payment_notification_post**](docs/DefaultApi.md#create_payment_notification_post) | **POST** /{address}/createPaymentNotification | createPaymentNotification(string,(string,string),(address,address,uint256,uint256),bytes)
 *DefaultApi* | [**get_intermediary_get**](docs/DefaultApi.md#get_intermediary_get) | **GET** /{address}/getIntermediary | getIntermediary(address) [read only]
 *DefaultApi* | [**get_intermediary_post**](docs/DefaultApi.md#get_intermediary_post) | **POST** /{address}/getIntermediary | getIntermediary(address) [read only]
+*DefaultApi* | [**get_owner_get**](docs/DefaultApi.md#get_owner_get) | **GET** /{address}/getOwner | getOwner() [read only]
+*DefaultApi* | [**get_owner_post**](docs/DefaultApi.md#get_owner_post) | **POST** /{address}/getOwner | getOwner() [read only]
 *DefaultApi* | [**get_payment_notification_get**](docs/DefaultApi.md#get_payment_notification_get) | **GET** /{address}/getPaymentNotification | getPaymentNotification(bytes32) [read only]
 *DefaultApi* | [**get_payment_notification_post**](docs/DefaultApi.md#get_payment_notification_post) | **POST** /{address}/getPaymentNotification | getPaymentNotification(bytes32) [read only]
 *DefaultApi* | [**intermediary_registration_subscribe**](docs/DefaultApi.md#intermediary_registration_subscribe) | **POST** /IntermediaryRegistration/subscribe | IntermediaryRegistration(address,string) [event]
@@ -59,6 +61,7 @@ Class | Method | HTTP request | Description
  - [Error](docs/Error.md)
  - [GetIntermediaryInputs](docs/GetIntermediaryInputs.md)
  - [GetIntermediaryOutputs](docs/GetIntermediaryOutputs.md)
+ - [GetOwnerOutputs](docs/GetOwnerOutputs.md)
  - [GetPaymentNotificationInputs](docs/GetPaymentNotificationInputs.md)
  - [GetPaymentNotificationOutputs](docs/GetPaymentNotificationOutputs.md)
  - [IntermediaryRegistrationEvent](docs/IntermediaryRegistrationEvent.md)

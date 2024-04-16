@@ -1,6 +1,6 @@
 # \DefaultApi
 
-All URIs are relative to *https://u0s5jrp8nx-u0jo91fxhc-connect.us0-aws.kaleido.io/gateways/u0bpii6ir3*
+All URIs are relative to *https://u0s5jrp8nx-u0jo91fxhc-connect.us0-aws.kaleido.io/gateways/u0zvk4trgb*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -11,6 +11,8 @@ Method | HTTP request | Description
 [**create_payment_notification_post**](DefaultApi.md#create_payment_notification_post) | **POST** /{address}/createPaymentNotification | createPaymentNotification(string,(string,string),(address,address,uint256,uint256),bytes)
 [**get_intermediary_get**](DefaultApi.md#get_intermediary_get) | **GET** /{address}/getIntermediary | getIntermediary(address) [read only]
 [**get_intermediary_post**](DefaultApi.md#get_intermediary_post) | **POST** /{address}/getIntermediary | getIntermediary(address) [read only]
+[**get_owner_get**](DefaultApi.md#get_owner_get) | **GET** /{address}/getOwner | getOwner() [read only]
+[**get_owner_post**](DefaultApi.md#get_owner_post) | **POST** /{address}/getOwner | getOwner() [read only]
 [**get_payment_notification_get**](DefaultApi.md#get_payment_notification_get) | **GET** /{address}/getPaymentNotification | getPaymentNotification(bytes32) [read only]
 [**get_payment_notification_post**](DefaultApi.md#get_payment_notification_post) | **POST** /{address}/getPaymentNotification | getPaymentNotification(bytes32) [read only]
 [**intermediary_registration_subscribe**](DefaultApi.md#intermediary_registration_subscribe) | **POST** /IntermediaryRegistration/subscribe | IntermediaryRegistration(address,string) [event]
@@ -286,6 +288,80 @@ Name | Type | Description  | Required | Notes
 ### Return type
 
 [**models::GetIntermediaryOutputs**](getIntermediary_outputs.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/x-yaml
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## get_owner_get
+
+> models::GetOwnerOutputs get_owner_get(address, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_transaction)
+getOwner() [read only]
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**address** | **String** | The contract address | [required] |
+**kld_id** | Option<**String**> | Optionally set the ID for this request - must be unique if set (header: x-kaleido-id) |  |
+**kld_from** | Option<**String**> | The 'from' address (header: x-kaleido-from) |  |[default to 0xe20be4f77d982d7324237dfd3b03bb6552d28129]
+**kld_ethvalue** | Option<**i32**> | Ether value to send with the transaction (header: x-kaleido-ethvalue) |  |
+**kld_gas** | Option<**i32**> | Gas to send with the transaction (auto-calculated if not set) (header: x-kaleido-gas) |  |
+**kld_gasprice** | Option<**i32**> | Gas Price offered (header: x-kaleido-gasprice) |  |
+**kld_transaction** | Option<**String**> | Query the details for the provided transaction hash (header: x-kaleido-transaction) |  |
+
+### Return type
+
+[**models::GetOwnerOutputs**](getOwner_outputs.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## get_owner_post
+
+> models::GetOwnerOutputs get_owner_post(address, body, kld_id, kld_from, kld_ethvalue, kld_gas, kld_gasprice, kld_sync, kld_call, kld_privatefrom, kld_privatefor, kld_blocknumber, kld_acktype)
+getOwner() [read only]
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**address** | **String** | The contract address | [required] |
+**body** | **serde_json::Value** |  | [required] |
+**kld_id** | Option<**String**> | Optionally set the ID for this request - must be unique if set (header: x-kaleido-id) |  |
+**kld_from** | Option<**String**> | The 'from' address (header: x-kaleido-from) |  |[default to 0xe20be4f77d982d7324237dfd3b03bb6552d28129]
+**kld_ethvalue** | Option<**i32**> | Ether value to send with the transaction (header: x-kaleido-ethvalue) |  |
+**kld_gas** | Option<**i32**> | Gas to send with the transaction (auto-calculated if not set) (header: x-kaleido-gas) |  |
+**kld_gasprice** | Option<**i32**> | Gas Price offered (header: x-kaleido-gasprice) |  |
+**kld_sync** | Option<**bool**> | Block the HTTP request until the tx is mined (does not store the receipt) (header: x-kaleido-sync) |  |[default to true]
+**kld_call** | Option<**bool**> | Perform a read-only call with the same parameters that would be used to invoke, and return result (header: x-kaleido-call) |  |
+**kld_privatefrom** | Option<**String**> | Private transaction sender (header: x-kaleido-privatefrom) |  |
+**kld_privatefor** | Option<**String**> | Private transaction recipients (comma separated or multiple params) (header: x-kaleido-privatefor) |  |
+**kld_blocknumber** | Option<**String**> | The target block number for eth_call requests. One of 'earliest/latest/pending', a number or a hex string (header: x-kaleido-blocknumber) |  |
+**kld_acktype** | Option<**String**> | Set to 'receipt' to store a receipt before acknowledging an async request (header: x-kaleido-acktype) |  |
+
+### Return type
+
+[**models::GetOwnerOutputs**](getOwner_outputs.md)
 
 ### Authorization
 
