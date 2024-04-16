@@ -6,3 +6,4 @@ build:
   ./scripts/build_api/build.sh wb_uae_cbproxy_api u0vtfbfnvz.swagger.json
   ./scripts/build_api/build.sh wb_payment_init u0zvk4trgb.swagger.json
   ./scripts/build_api/build.sh wb_amm u0ta9zm0up.swagger.json
+  ./scripts/build_api/build.sh wb_htlc_erc20 u0ff6ziwba.swagger.json
