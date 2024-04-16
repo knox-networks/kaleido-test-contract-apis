@@ -22,7 +22,7 @@ wb_xaed_token_api = { path = "./wb_xaed_token_api" }
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://u0s5jrp8nx-u0jo91fxhc-connect.us0-aws.kaleido.io/gateways/u0jzbvvw76*
+All URIs are relative to *https://u0s5jrp8nx-u0jo91fxhc-connect.us0-aws.kaleido.io/gateways/u0i7e09use*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------

@@ -1,6 +1,6 @@
 # \DefaultApi
 
-All URIs are relative to *https://u0s5jrp8nx-u0jo91fxhc-connect.us0-aws.kaleido.io/gateways/u0jzbvvw76*
+All URIs are relative to *https://u0s5jrp8nx-u0jo91fxhc-connect.us0-aws.kaleido.io/gateways/u0i7e09use*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
