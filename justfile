@@ -5,3 +5,4 @@ build:
   ./scripts/build_api/build.sh wb_xegp_token_api u0zh4okck0.swagger.json
   ./scripts/build_api/build.sh wb_uae_cbproxy_api u0vtfbfnvz.swagger.json
   ./scripts/build_api/build.sh wb_payment_init u0zvk4trgb.swagger.json
+  ./scripts/build_api/build.sh wb_amm u0ta9zm0up.swagger.json
