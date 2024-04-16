@@ -11,4 +11,3 @@ wb_htlc_erc20 = { path = "./gen/wb_htlc_erc20" }
 wb_payment_init = { path = "./gen/wb_payment_init" }
 wb_uae_cbproxy_api = { path = "./gen/wb_uae_cbproxy_api" }
 wb_xaed_token_api = { path = "./gen/wb_xaed_token_api" }
-wb_xegp_token_api = { path = "./gen/wb_xegp_token_api" }
